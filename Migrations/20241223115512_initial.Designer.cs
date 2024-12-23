@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MailSend.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20241130074542_sb")]
-    partial class sb
+    [Migration("20241223115512_initial")]
+    partial class initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

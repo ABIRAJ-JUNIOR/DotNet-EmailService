@@ -31,6 +31,8 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 // Ensure EmailConfig is available as a singleton if needed
 builder.Services.AddSingleton(sp => sp.GetRequiredService<IOptions<EmailConfig>>().Value);
 
+var initializer = new DataIntializer();
+initializer.AddEmailTemplateSampleData();
 
 var app = builder.Build();
 
